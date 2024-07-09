@@ -26,7 +26,3 @@ LISTA DE PENDIENTES
     4.3-SISE redirigir al SISE a correo institucional (Alumnos) (LISTO)
     4.4-Correo institucional redirigir a correo institucional (Alumnos) (LISTO)
     4.5-Calendario escolar nueva ventana con la foto del calendario escolar(Alumnos) (LISTO)
-
-5-Cambiar la imagen del logo
-
-6-Limpiar codigos
