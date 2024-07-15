@@ -294,20 +294,20 @@ input[type="text"]::placeholder {
     background: #f0f0f0;
 }
 
-.room-content {
+.edificio-A {
     margin-top: 48px;
     display: none;
     position: absolute;
     left: 175px;
 }
 
-.room-content table {
+.edificio-A table {
     margin: 0 auto;
     border-collapse: collapse;
     
 }
 
-.room-content td {
+.edificio-A td {
     padding: 0;
     text-align: left;
     width: 100%;
@@ -432,12 +432,6 @@ input[type="text"]::placeholder {
     background-color: #0055a5;
 }
 
-
-
-
-
-
-
 .solicitar-form {
     display: none;
 }
@@ -481,4 +475,23 @@ input[type="text"]::placeholder {
 
 .solicitar-form button:hover {
     background-color: #0055a5;
+}
+
+.edificio-H {
+    margin-top: 48px;
+    display: none;
+    position: absolute;
+    left: 175%;
+}
+
+.edificio-H table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    
+}
+
+.edificio-H td {
+    padding: 0;
+    text-align: left;
+    width: 100%;
 }

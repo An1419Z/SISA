@@ -11,8 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const edificiosButton = document.getElementById("edificios-button");
     const buildingContent = document.getElementById("building-content");
     const edificioAButton = document.getElementById("edificio-a");
-    const roomContent = document.getElementById("room-content");
+    const edificioAButtonh = document.getElementById("edificio-h");
+    const edificioA = document.getElementById("edificio-A");
+    const edificioH = document.getElementById("edificio-H");
     const audiovisualButton = document.getElementById("audiovisual-button");
+    const audiovisualButtonh = document.getElementById("audiovisual-button-h");
     const avContent = document.getElementById("av-content");
 
     const agendarUsoButton = document.getElementById("agendar-uso-button");
@@ -28,23 +31,46 @@ document.addEventListener("DOMContentLoaded", function() {
             buildingContent.style.display = "block";
         } else {
             buildingContent.style.display = "none";
-            roomContent.style.display = "none"; // Ocultar la tabla de salones si se cierra la de edificios
+            edificioA.style.display = "none"; // Ocultar la tabla de salones si se cierra la de edificios
+            edificioH.style.display = "none";
             avContent.style.display = "none"; // Ocultar el cuadro de audiovisual si se cierra la de edificios
             agendaForm.style.display = "none"; // Ocultar el formulario si se cierra la de edificios
         }
     });
 
     edificioAButton.addEventListener("click", function() {
-        if (roomContent.style.display === "none" || roomContent.style.display === "") {
-            roomContent.style.display = "block";
+        if (edificioA.style.display === "none" || edificioA.style.display === "") {
+            edificioA.style.display = "block";
         } else {
-            roomContent.style.display = "none";
+            edificioA.style.display = "none";
+            avContent.style.display = "none"; // Ocultar el cuadro de audiovisual si se cierra la de salones
+            agendaForm.style.display = "none"; // Ocultar el formulario si se cierra la de salones
+        }
+    });
+
+    edificioAButtonh.addEventListener("click", function() {
+        if (edificioA.style.display === "none" || edificioA.style.display === "") {
+            edificioA.style.display = "none";
+            edificioH.style.display = "block";
+        } else {
+            edificioH.style.display = "none";
+            edificioA.style.display = "none";
             avContent.style.display = "none"; // Ocultar el cuadro de audiovisual si se cierra la de salones
             agendaForm.style.display = "none"; // Ocultar el formulario si se cierra la de salones
         }
     });
 
     audiovisualButton.addEventListener("click", function() {
+        if (avContent.style.display === "none" || avContent.style.display === "") {
+            avContent.style.display = "block";
+            imagen.style.display = "none";
+        } else {
+            avContent.style.display = "none";
+            imagen.style.display = "block";
+        }
+    });
+
+    audiovisualButtonh.addEventListener("click", function() {
         if (avContent.style.display === "none" || avContent.style.display === "") {
             avContent.style.display = "block";
             imagen.style.display = "none";
