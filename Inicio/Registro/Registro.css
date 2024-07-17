@@ -163,3 +163,46 @@ html {
     top: -100px; /* Ajusta este valor para mover el texto hacia abajo */
     left: -700px; /* Ajusta este valor para mover el texto hacia la izquierda */
 }
+
+@media (max-width: 640px) {
+    .header {
+        top: 20px;
+        left: 20px;
+        width: calc(100% - 40px);
+        text-align: center; /* Centrar texto en móviles */
+    }
+
+    .outer-container {
+        flex-direction: column; /* Ajustar dirección de elementos en móviles */
+        align-items: center;
+    }
+
+    .login-container {
+        width: 80%;
+        margin-right: -5px;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+        /* Añadir margen superior para colocar el logo encima del login */
+        margin-top: -790px; /* Ajustar valor según la altura del logo */
+        margin-bottom: 60px;
+        max-width: 60%; /* Ajustar tamaño del logo en móviles */
+        transform: translate(0px, 0px);
+    }
+
+    .register-text {
+        top: 260px;
+        left: 0;
+        margin-top: 140px;
+    }
+
+    .footer {
+        bottom: 10px;
+        left: 10px;
+        width: calc(100% - 20px);
+        text-align: center; /* Centrar texto en móviles */
+        display: none;
+    }
+}
