@@ -224,6 +224,7 @@
         justify-content: space-between;
         align-items: flex-start;
         padding: 0px;
+        display: none;
     }
     
     /* Estilo del menú (menu): */
@@ -336,4 +337,38 @@
     .menu.hidden{
         display: none;
     }
+
+    .signo {
+        width: 20px; /* Ajusta el ancho según tus necesidades */
+        height: 20px; /* Ajusta la altura según tus necesidades */
+        position: relative; /* Permite posicionar los pseudoelementos */
+      }
+      
+      .signo::after,
+      .signo::before,
+      .signo::marker {
+        content: ''; /* No se muestra ningún texto */
+        position: absolute; /* Posicionamiento absoluto dentro del elemento */
+        width: 10px; /* Ajusta el ancho de las líneas */
+        height: 2px; /* Ajusta el alto de las líneas */
+        background-color: #000; /* Color de las líneas */
+      }
+      
+      .signo::after {
+        top: 25%; /* Posiciona la primera línea en el 25% */
+        left: 50%; /* Posiciona horizontalmente en el centro */
+        transform: translate(-50%, -50%);
+      }
+      
+      .signo::before {
+        top: 50%; /* Posiciona la segunda línea en el 50% */
+        left: 50%; /* Posiciona horizontalmente en el centro */
+        transform: translate(-50%, -50%);
+      }
+      
+      .signo::marker {
+        top: 75%; /* Posiciona la tercera línea en el 75% */
+        left: 50%; /* Posiciona horizontalmente en el centro */
+        transform: translate(-50%, -50%);
+      }
 }

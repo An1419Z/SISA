@@ -18,7 +18,7 @@ document.querySelector('.Horario').addEventListener('click', function(event) {
 });
 
 document.addEventListener('DOMContentLoaded', function(){
-    const menu = document.getElementById('menu');
+    const menu = document.getElementById('container');
     const toggle = document.getElementById('toggleMenu');
 
     toggle.addEventListener("click", function(){
