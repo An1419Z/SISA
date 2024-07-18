@@ -16,3 +16,16 @@ document.querySelector('.Horario').addEventListener('click', function(event) {
     event.preventDefault(); // Prevents the default action of the button
     window.location.href = 'Horario de grupo/Horario de grupo.html'; // Redirects to the agendacion.html page
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+    const menu = document.getElementById('menu');
+    const toggle = document.getElementById('toggleMenu');
+
+    toggle.addEventListener("click", function(){
+        if(menu.style.display === "none" || menu.style.display === ""){
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    });
+});

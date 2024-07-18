@@ -17,13 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const audiovisualButton = document.getElementById("audiovisual-button");
     const audiovisualButtonh = document.getElementById("audiovisual-button-h");
     const avContent = document.getElementById("av-content");
-
     const agendarUsoButton = document.getElementById("agendar-uso-button");
     const agendaForm = document.getElementById("agenda-form");
-
     const solicitarusoButton = document.getElementById("solicitar-uso-button");
     const solicitarForm = document.getElementById("solicitar-form");
-
     const imagen = document.getElementById("Logo");
 
     edificiosButton.addEventListener("click", function() {
