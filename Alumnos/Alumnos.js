@@ -17,6 +17,11 @@ document.querySelector('.Horario').addEventListener('click', function(event) {
     window.location.href = 'Horario de grupo/Horario de grupo.html'; // Redirects to the agendacion.html page
 });
 
+document.querySelector('.Calendario').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevents the default action of the button
+    window.location.href = 'Calendario/Calendario.html'; // Redirects to the agendacion.html page
+});
+
 document.addEventListener('DOMContentLoaded', function(){
     const menu = document.getElementById('container');
     const toggle = document.getElementById('toggleMenu');
