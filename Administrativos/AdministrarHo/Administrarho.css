@@ -245,6 +245,10 @@
     .buttons button:hover {
         background-color: #003366;
     }
+
+    .menu-icon{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -562,5 +566,9 @@
         
         .buttons button:hover {
             background-color: #003366;
+        }
+
+        .titulo{
+            display: none;
         }
     }

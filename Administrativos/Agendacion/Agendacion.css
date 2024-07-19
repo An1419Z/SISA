@@ -145,7 +145,7 @@
         border-radius: 20px;
         transition: background-color 0.5s ease; /* Add the transition property */
         position: relative; /* Set the position to relative for the pseudo-elements */
-        left: 1600px;
+        left: 600px;
         overflow: hidden;
     }
     
@@ -648,4 +648,8 @@
         outline: none;
         font-size: 16px;
     }  
+
+    .titulo{
+        display: none;
+    }
 }
