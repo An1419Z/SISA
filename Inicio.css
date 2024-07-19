@@ -175,7 +175,7 @@ body {
         left: 0;
         /* Añadir margen superior para colocar el logo encima del login */
         margin-top: -600px; /* Ajustar valor según la altura del logo */
-        margin-bottom: -160px;
+        margin-bottom: -260px;
         max-width: 70%; /* Ajustar tamaño del logo en móviles */
         transform: translate(0px, 0px);
     }

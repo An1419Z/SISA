@@ -9,12 +9,12 @@
 
         var destino;
         if (primeraLetra === 'a') {
-            destino = '../../Alumnos/Alumno.html';
+            destino = 'Alumnos/Alumno.html';
         } else if (primeraLetra === 'd') {
-            destino = '../../Docentes/Docente.html';
+            destino = 'Docentes/Docente.html';
         }
         else if (primeraLetra === 'm') {
-            destino = '../../Administrativos/Administrativos.html';
+            destino = 'Administrativos/Administrativos.html';
         } else {
             alert('Usuario no válido');
             return;

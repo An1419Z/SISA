@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Integral de Servicios Académicos</title>
+    <link rel="stylesheet" href="Inicio.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="title">SISTEMA INTEGRAL DE SERVICIOS ACADÉMICOS®</h2>
+    </header>
+    <div class="outer-container">
+        <div class="login-container">
+            <form class="login-form" onsubmit="handleLogin(event)">
+                <p>USUARIO</p>
+                <input type="text" style="text-align: center;" id="usuario" placeholder="(al, dc, ad)00000000">
+                <p>CONTRASEÑA</p>
+                <input type="password" id="contrasena">
+                <button type="submit" class="button">INICIAR SESIÓN</button>
+            </form>
+        </div>
+        <img src="Recursos Visuales/Logo.jpg" alt="Emblema SISU" class="logo">
+    </div>
+    <h6 class="register-text">¿No tienes cuenta? <a href="Inicio/Registro/Registro.html">REGISTRATE</a></h6>
+    <footer class="footer">
+        <h3 class="institution-name">Universidad Tecnológica de Ciudad Juárez©</h3>
+    </footer>
+    <script src="inicio.js"></script>
+</body>
+</html>
