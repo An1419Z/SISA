@@ -156,7 +156,7 @@
         display: flex;
         flex-direction: column;
     }
-    
+
     /* Estilo del contenedor principal (wrapper): */
     .wrapper {
         background-color: #ffffff;
@@ -338,37 +338,26 @@
         display: none;
     }
 
-    .signo {
-        width: 20px; /* Ajusta el ancho según tus necesidades */
-        height: 20px; /* Ajusta la altura según tus necesidades */
-        position: relative; /* Permite posicionar los pseudoelementos */
-      }
-      
-      .signo::after,
-      .signo::before,
-      .signo::marker {
-        content: ''; /* No se muestra ningún texto */
-        position: absolute; /* Posicionamiento absoluto dentro del elemento */
-        width: 10px; /* Ajusta el ancho de las líneas */
-        height: 2px; /* Ajusta el alto de las líneas */
-        background-color: #000; /* Color de las líneas */
-      }
-      
-      .signo::after {
-        top: 25%; /* Posiciona la primera línea en el 25% */
-        left: 50%; /* Posiciona horizontalmente en el centro */
-        transform: translate(-50%, -50%);
-      }
-      
-      .signo::before {
-        top: 50%; /* Posiciona la segunda línea en el 50% */
-        left: 50%; /* Posiciona horizontalmente en el centro */
-        transform: translate(-50%, -50%);
-      }
-      
-      .signo::marker {
-        top: 75%; /* Posiciona la tercera línea en el 75% */
-        left: 50%; /* Posiciona horizontalmente en el centro */
-        transform: translate(-50%, -50%);
-      }
+    /* Estilos para el icono del menú */
+    .menu-icon {
+        width: 35px; /* Puedes ajustar este valor según tus necesidades */
+        height: 25px; /* Puedes ajustar este valor según tus necesidades */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        border: none;
+        background-color: white;
+    }
+
+    .menu-icon::before,
+    .menu-icon::after,
+    .menu-icon div {
+        content: '';
+        width: 100%;
+        height: 4px; /* Puedes ajustar este valor según tus necesidades */
+        background-color: #003366; /* Color azul oscuro */
+        border-radius: 2px; /* Opcional: para bordes redondeados */
+        border: none;
+    }
 }

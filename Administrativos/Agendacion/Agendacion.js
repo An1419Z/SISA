@@ -9,7 +9,7 @@ document.querySelector('.logout').addEventListener('click', function(event) {
 
 document.getElementById('ok').addEventListener('click', function() {
     const dateInput = document.getElementById('date-input').value;
-    const regex = /7\/2024$/; // Modificamos la expresión regular para que solo acepte fechas en el formato MM/2024
+    const regex = /^12\/07\/2024$/;
 
     if (dateInput === '') {
         // Si no se ingresa ninguna fecha, muestra un mensaje de error diferente

@@ -29,3 +29,16 @@ document.querySelector('.modify').addEventListener('click', function(event) {
         document.getElementById('Logo').style.display = 'block';
     }
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+    const menu = document.getElementById('container');
+    const toggle = document.getElementById('toggleMenu');
+
+    toggle.addEventListener("click", function(){
+        if(menu.style.display === "none" || menu.style.display === ""){
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    });
+});
