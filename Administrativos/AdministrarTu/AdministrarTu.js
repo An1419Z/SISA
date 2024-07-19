@@ -16,3 +16,16 @@ document.querySelector('.asignar').addEventListener('click', function(event) {
     event.preventDefault(); // Prevents the default action of the button
     window.location.href = 'Asignar/Asignar.html'; // Redirects to the agendacion.html page
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+    const menu = document.getElementById('container');
+    const toggle = document.getElementById('toggleMenu');
+
+    toggle.addEventListener("click", function(){
+        if(menu.style.display === "none" || menu.style.display === ""){
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    });
+});
