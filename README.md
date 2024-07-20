@@ -30,3 +30,18 @@ LISTA DE PENDIENTES
 5-Cambiar la imagen del logo
 
 6-Limpiar codigos
+
+7-DISPOSITIVO MOVIL
+
+(ALUMNOS)
+1-Disponibilidad de salones
+2-Horario de grupo
+3-calendario
+
+(DOCENTES)
+1-Disponibilidad de salones
+2-Agendar salon
+3-horario de grupo
+
+(ADMINISTRATIVOS)
+1-Adminstrar horarios

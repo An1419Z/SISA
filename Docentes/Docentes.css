@@ -360,4 +360,8 @@
         border-radius: 2px; /* Opcional: para bordes redondeados */
         border: none;
     }
+
+    .titulo{
+        display: none;
+    }
 }
