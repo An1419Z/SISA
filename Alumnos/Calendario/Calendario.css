@@ -415,5 +415,9 @@
         width: 100%; /* Reducir la imagen al 50% de su tamaño original */
         height: auto; /* Mantener la proporción de aspecto */
     }
+
+    .titulo{
+        display: none;
+    }
 }
 

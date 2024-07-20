@@ -34,14 +34,13 @@ LISTA DE PENDIENTES
 7-DISPOSITIVO MOVIL
 
 (ALUMNOS)
-1-Disponibilidad de salones
-2-Horario de grupo
-3-calendario
+    1-Disponibilidad de salones (Ajustar tabla)
+    2-Horario de grupo (Ajustar tabla)
 
 (DOCENTES)
-1-Disponibilidad de salones
-2-Agendar salon
-3-horario de grupo
+    1-Disponibilidad de salones (Ajustar tabla)
+    2-Agendar salon (Ajustar Javascript)
+    3-horario de grupo (Ajustar Tabla)
 
 (ADMINISTRATIVOS)
-1-Adminstrar horarios
+    1-Adminstrar horarios (Ajustar tabla)

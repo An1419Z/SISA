@@ -60,20 +60,22 @@ document.addEventListener("DOMContentLoaded", function() {
     audiovisualButton.addEventListener("click", function() {
         if (avContent.style.display === "none" || avContent.style.display === "") {
             avContent.style.display = "block";
-            imagen.style.display = "none";
+
         } else {
             avContent.style.display = "none";
-            imagen.style.display = "block";
+
         }
     });
 
     audiovisualButtonh.addEventListener("click", function() {
         if (avContent.style.display === "none" || avContent.style.display === "") {
             avContent.style.display = "block";
-            imagen.style.display = "none";
+            agendarUsoButton.style.display = "none";
+            solicitarForm.style.display = "none";
         } else {
             avContent.style.display = "none";
-            imagen.style.display = "block";
+            agendarUsoButton.style.display = "none";
+            solicitarForm.style.display = "none";
         }
     });
 

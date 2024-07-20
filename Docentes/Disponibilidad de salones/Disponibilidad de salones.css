@@ -427,7 +427,6 @@
         border-radius: 20px;
         transition: background-color 0.5s ease; /* Add the transition property */
         position: relative; /* Set the position to relative for the pseudo-elements */
-        left: 150px;
         overflow: hidden;
     }
     
@@ -469,7 +468,7 @@
         padding: 20px;
         width: 200px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        margin-top: -100px;
+        margin-top: 25px;
         transform: translate(-50% -50%);
     }
     
@@ -477,10 +476,12 @@
         font-size: 14px;
         color: #003B7A;
         margin-bottom: 10px;
+        transform: translate(-50% -50%);
     }
     
     .body {
         margin-bottom: 20px;
+        transform: translate(-50% -50%);
     }
     
     .body label {
@@ -488,6 +489,7 @@
         font-size: 18px;
         color: #003B7A;
         margin-bottom: 10px;
+        transform: translate(-50% -50%);
     }
     
     .input-container {
@@ -497,6 +499,7 @@
         border-radius: 4px;
         padding: 5px;
         background-color: #FFEFD5;
+        transform: translate(-50% -50%);
     }
     
     .icon {
@@ -547,8 +550,8 @@
     }
     
     .table-container {
-        border-radius: 10px;
-        
+        border-radius: 50px;
+        margin-top: 100px;
     }
     
     table {

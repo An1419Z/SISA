@@ -427,18 +427,10 @@
         transform: translate(-50%, -50%) scale(1);
     }
     
-    /* Estilo del logo: */
-    .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center; /* Centrar horizontalmente */
-        margin-top: 20px; /* Espacio adicional arriba */
-    }
-    
-    .logo img {
+    .logo{
         display: none;
     }
-    
+
     /* Estilo del título principal */
     header h1 {
         font-size: 14px; /* Tamaño de fuente ajustado */
