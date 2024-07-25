@@ -443,7 +443,6 @@
         border-radius: 10px;
         transition: background-color 0.5s ease; /* Add the transition property */
         position: relative; /* Set the position to relative for the pseudo-elements */
-        left: 120px;
         overflow: hidden;
     }
     
