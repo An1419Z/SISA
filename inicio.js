@@ -1,25 +1,35 @@
-    function handleLogin(event) {
-        event.preventDefault(); // Previene la acción por defecto del formulario
+function handleLogin(event) {
+    event.preventDefault(); // Previene la acción por defecto del formulario
 
-        var usuario = document.getElementById('usuario').value;
-        var contrasena = document.getElementById('contrasena').value;
+    var usuario = document.getElementById('usuario').value;
+    var contrasena = document.getElementById('contrasena').value;
 
-        // Detectar la letra en el campo de usuario
-        var primeraLetra = usuario.charAt(0).toLowerCase();
-
-        var destino;
-        if (primeraLetra === 'a') {
-            destino = 'Alumnos/Alumno.html';
-        } else if (primeraLetra === 'd') {
-            destino = 'Docentes/Docente.html';
-        }
-        else if (primeraLetra === 'm') {
-            destino = 'Administrativos/Administrativos.html';
+    // Enviar los datos al servidor usando fetch
+    fetch('login.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: 'usuario=' + encodeURIComponent(usuario) + '&contrasena=' + encodeURIComponent(contrasena)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            var destino;
+            if (data.tipoUsuario === 'al') {
+                destino = 'Alumnos/Alumno.html';
+            } else if (data.tipoUsuario === 'dc') {
+                destino = 'Docentes/Docente.html';
+            } else if (data.tipoUsuario === 'ad') {
+                destino = 'Administrativos/Administrativos.html';
+            } else {
+                alert('Usuario no válido');
+                return;
+            }
+            window.location.href = destino;
         } else {
-            alert('Usuario no válido');
-            return;
+            alert(data.message);
         }
-
-        // Redirigir al usuario al destino correspondiente
-        window.location.href = destino;
-    }
+    })
+    .catch(error => console.error('Error:', error));
+}
