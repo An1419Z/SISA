@@ -19,15 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (mysqli_num_rows($resultado) > 0) {
         $fila = mysqli_fetch_assoc($resultado);
-        $hashAlmacenado = $fila['Contraseña'];
-        $verificacion = password_verify($contrasena, $hashAlmacenado);
-
-        // Mensajes de depuración
-        echo "Contraseña ingresada: $contrasena<br>";
-        echo "Hash almacenado: $hashAlmacenado<br>";
-        echo "Resultado de la verificación: " . ($verificacion ? 'true' : 'false') . "<br>";
-
-        if ($verificacion) {
+        if (password_verify($contrasena, $fila['Contraseña'])) {
             $tipoUsuario = substr($usuario, 0, 2);
             echo json_encode(['success' => true, 'tipoUsuario' => $tipoUsuario]);
         } else {
