@@ -1,5 +1,4 @@
 <?php
-    // Conexión a la base de datos
     $servidor = "fdb1030.awardspace.net";
     $usuario = "4506764_wpressec801ecf";
     $clave = "JqcK]*+e43J%p6VI";
