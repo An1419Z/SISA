@@ -74,5 +74,22 @@ mysqli_close($enlace);
     <?php if ($redireccion) : ?>
         <script>window.location.href = '<?php echo $redireccion; ?>';</script>
     <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 </body>
 </html>
