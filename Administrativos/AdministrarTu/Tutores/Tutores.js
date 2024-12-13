@@ -3,7 +3,7 @@ document.querySelector('.logout').addEventListener('click', function(event) {
     var mensaje = 'Quiere cerrar sesión?'; // Cambia esto por el mensaje que desees
     var confirmacion = confirm(mensaje);
     if (confirmacion) {
-        window.location.href = '../../../Index.html'; // Asegúrate de que esta es la página a la que quieres redirigir
+        window.location.href = '../../../Index.php'; // Asegúrate de que esta es la página a la que quieres redirigir
     }
 });
 

@@ -1,0 +1,102 @@
+.lista { display: none; }
+.visible { display: block; }
+
+
+.boton {
+    background-color: #004494;
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    margin: 1px 0;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+
+    transition: background-color 0.5s ease; /* Add the transition property */
+    position: relative; /* Set the position to relative for the pseudo-elements */
+    overflow: hidden;
+}
+
+.boton::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: transform 0.5s ease;
+    opacity: 0.1;
+}
+
+.boton:hover {
+    background-color: #003B7A;
+}
+
+.boton:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Estilo del encabezado (header): */
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1px solid #b6b6b6;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Estilo del botón de cierre de sesión (logout): */
+header .logout {
+    background-color: #004494;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+header .logout::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    opacity: 0.1;
+}
+
+header .logout:hover {
+    background-color: #003B7A;
+}
+
+header .logout:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/*Estilo del logo:*/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /*Mover imagen derecha: margin-left: 890px;*/
+}
+
+.logo img {
+    height: auto;
+    width: 200%;
+}

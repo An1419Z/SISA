@@ -62,6 +62,14 @@ body {
     border-radius: 5px;
 }
 
+.login-form input[type="email"] {
+    width: 100%; /* Ajusta el ancho de los campos de entrada */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 .login-form button {
     width: 100%; /* Ajusta el ancho del botón */
     padding: 10px;

@@ -1,5 +1,12 @@
 <?php
     include ("Registro2.php");
+
+    session_start();
+
+if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] !== 'RegistroAdministrativos') {
+    header('Location: ../../Administrativos/Administrativos.php');
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -16,15 +23,21 @@
         </header>
         <div class="outer-container">
             <div class="login-container">
-                <form class="login-form" action="" method="post">
-                    <p>NOMBRE COMPLETO</p>
-                    <input type="text" style="text-align: center;" id="nombre" name="nombre">
-                    <p>USUARIO</p>
-                    <input type="text" style="text-align: center;" id="usuario" name="usuario" placeholder="(al, dc, ad)00000000">
-                    <p>CORREO</p>
-                    <input type="text" style="text-align: center;" id="correo" name="correo">
-                    <p>CONTRASEÑA</p>
-                    <input type="password" style="text-align: center;" id="contrasena" name="contra">
+                <form class="login-form" action="Registro2.php" method="post">
+                    <p>NOMBRE(S):</p>
+                    <input type="text" style="text-align: center;" id="nombre" name="nombre" required>
+                    <p>APELLIDO PATERNO:</p>
+                    <input type="text" style="text-align: center;" id="ApellidoP" name="ApellidoP" required>
+                    <p>APELLIDO MATERNO:</p>
+                    <input type="text" style="text-align: center;" id="ApellidoM" name="ApellidoM" required>
+                    <p>USUARIO:</p>
+                        <label><input type="radio" name="Usuario" value="Alumno" required>Alumno</label>
+                        <label><input type="radio" name="Usuario" value="Docente" required>Docente</label>
+                        <label><input type="radio" name="Usuario" value="Administrativo" required>Administrativo</label>
+                    <p>CORREO:</p>
+                    <input type="email" style="text-align: center;" id="correo" name="correo" required>
+                    <p>CONTRASEÑA:</p>
+                    <input type="password" style="text-align: center;" id="contrasena" name="contra" required>
                     <button type="submit" name="registro" class="button">REGISTRAR</button>
             </form>
         </div>
@@ -33,5 +46,27 @@
     <footer class="footer">
         <h3 class="institution-name">Universidad Tecnológica de Ciudad Juárez©</h3>
     </footer>
+    <script>
+        document.querySelector('.REGISTRO').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevents the default action of the button
+        window.location.href = '../Inicio/Registro/Registro.php'; // Redirects to the disponibilidad.php page
+    });
+
+    let logoutTimer;
+
+function resetTimer() {
+    clearTimeout(logoutTimer);
+    logoutTimer = setTimeout(logout, 300000); // 300,000 ms = 5 minutos
+}
+
+function logout() {
+    window.location.href = '../Index.php'; // Redirige al logout.php
+}
+
+window.onload = resetTimer;
+window.onmousemove = resetTimer;
+window.onkeypress = resetTimer;
+window.onscroll = resetTimer;
+    </script>
 </body>
 </html>
